@@ -14,6 +14,9 @@ module.exports = {
         'lightTextColor': '#f2f2f2',
         'lighterGray': '#d5d5d5'
       },
+      fontFamily: {
+        Lato: ["Lato"]
+      }
     },
   },
   plugins: [],
