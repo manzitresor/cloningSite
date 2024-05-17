@@ -254,19 +254,25 @@
         </div>
     </section>
     <!-- asked questions -->
-    <section class=" bg-gray-100 container h-screen py-24">
+    <section class=" bg-gray-100 container h-full py-24">
         <div class="mb-4">
             <h1 class="text-5xl font-light text-primary">Frequently asked questions</h1>
         </div>
-        <div class="flex gap-x-8 text-lg border-b py-3">
+        <!-- Desktop Link -->
+        <div class="hidden lg:flex gap-x-8 text-lg border-b py-3">
             <a class="font-bold">International Students</a>
             <a class="text-lightGray">Prospective Students</a>
             <a class="text-lightGray">Professionals</a>
             <a class="text-lightGray">Alumni</a>
             <a class="text-lightGray">U.Porto Students</a>
         </div>
-        <div class="grid grid-cols-2 mt-10">
-            <div class="h-80 flex flex-col gap-y-6">
+        <!-- Mobile Link -->
+        <div class=" flex border-2 border-black lg:hidden px-3 py-4 justify-between">
+            <a class="text-lg">International Students</a>
+            <i class="uil uil-angle-down font-extrabold text-xl"></i>
+        </div>
+        <div class="flex flex-col-reverse lg:flex-row lg:gap-x-3 mt-10">
+            <div class="h-full lg:h-80 flex flex-col gap-y-6">
                 <h2 class="text-4xl font-bold mt-4">International Students</h2>
                 <p class="text-lg font-light">Welcome! In this area you will find the answers you need to start and make the most of your experience at the University. We hope to help you... and welcome you soon!</p>
                 <div class="flex gap-x-3 items-center align-middle">
@@ -284,7 +290,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h-80">
+            <div class="h-full lg:h-80">
                 <img src="./assets/gate-estudantes-internacionais.format-jpeg.jpg">
             </div>
         </div>
