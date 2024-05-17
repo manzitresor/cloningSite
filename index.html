@@ -12,8 +12,9 @@
     <nav>
         <div class="bg-darkgray h-4 w-full">
         </div>
-        <div class="bg-lighterGray py-4 w-full fixed top-0 z-10">
-            <div class="container mx-auto flex justify-evenly">
+        <div class="bg-lighterGray h-16 py-3  md:py-4 w-full fixed top-0 z-10">
+            <!-- Desktop Navbar -->
+            <div class="hidden container mx-auto lg:flex justify-evenly">
                 <div class="h-full w-56">
                     <img src="./assets/logo.svg" alt="Logo" class="w-full h-full">
                 </div>
@@ -27,6 +28,18 @@
                 <div class="flex gap-x-12 border-b border-black">
                     <a class="text-lg">Search</a>
                     <i class="uil uil-search"></i>
+                </div>
+            </div>
+            <!-- Mobile navbar -->
+            <div class="container flex justify-between lg:hidden">
+                <div class="h-7 w-10">
+                    <img src="./assets/4d3c084c-da1f-489f-9156-41f0d8ddab2c.svg" class="h-full w-full object-cover object-center">
+                </div>
+                <div class="h-full w-44">
+                    <img src="./assets/logo.svg" alt="Logo" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="h-7 w-10">
+                    <img src="./assets/1653f223-7914-424b-9742-827aef308a05.svg" alt="Logo" class="w-full h-full object-cover object-center">
                 </div>
             </div>
         </div>
